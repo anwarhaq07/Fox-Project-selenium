@@ -29,11 +29,5 @@ public class shows {
 
 	}
 	
-	public void size() {
-		List<WebElement> links = driver.findElements(By.className("container"));
-		int size = links.size();
-		System.out.println(size);
-		
-	}
 
 }
