@@ -54,13 +54,13 @@ public class fox {
 			
 			//Signing Up
 			objsignup.signup(driver);
-			objsignup.setfirstname("Anwar");
-			objsignup.setlastname("Mohammed");
-			objsignup.setemail("anwarhaq07@gmail.com");
-			objsignup.setpassword("123456789");
+			objsignup.setfirstname("abc");
+			objsignup.setlastname("xyz");
+			objsignup.setemail("abc@xyz");
+			objsignup.setpassword("password");
 			objsignup.setgender();
 			objsignup.selectgender();
-			objsignup.setbirth("07/11/1991");
+			objsignup.setbirth("mm/dd/yyyy");
 			objsignup.clickcreate();		
 		}*/
 		@Test
@@ -72,8 +72,8 @@ public class fox {
 			
 			//****important referencing driver to webpage or else throws null pointer exception 
 			objaccount.login(driver);
-			objaccount.setemail("anwarhaq07@gmail.com");
-			objaccount.setpassword("123456789");
+			objaccount.setemail("abc@xyz");
+			objaccount.setpassword("password");
 			objaccount.clickbutton();
 			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
